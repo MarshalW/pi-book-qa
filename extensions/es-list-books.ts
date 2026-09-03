@@ -25,8 +25,8 @@ const esListBooksTool = {
     ctx: ToolExecuteContext,
   ) {
     const env = loadEnvFrom(ctx.cwd);
-    const endpoint = env.ES_MONKEY_ENDPOINT;
-    const apiKey = env.ES_MONKEY_API_KEY;
+    const endpoint = env.ES_ENDPOINT ?? env.ES_MONKEY_ENDPOINT;
+    const apiKey = env.ES_API_KEY ?? env.ES_MONKEY_API_KEY;
 
     if (!endpoint || !apiKey) {
       return {

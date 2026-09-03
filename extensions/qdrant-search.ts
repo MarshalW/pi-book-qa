@@ -38,10 +38,10 @@ const qdrantSearchTool = {
     ctx: ToolExecuteContext,
   ) {
     const env = loadEnvFrom(ctx.cwd);
-    const url = env.QDRANT_MONKEY_URL;
-    const apiKey = env.QDRANT_MONKEY_API_KEY;
-    const embedUrl = env.QDRANT_MONKEY_EMBED_URL;
-    const embedModel = env.QDRANT_MONKEY_EMBED_MODEL ?? "bge-m3:latest";
+    const url = env.QDRANT_URL ?? env.QDRANT_MONKEY_URL;
+    const apiKey = env.QDRANT_API_KEY ?? env.QDRANT_MONKEY_API_KEY;
+    const embedUrl = env.QDRANT_EMBED_URL ?? env.QDRANT_MONKEY_EMBED_URL;
+    const embedModel = env.QDRANT_EMBED_MODEL ?? env.QDRANT_MONKEY_EMBED_MODEL ?? "bge-m3:latest";
 
     if (!url || !apiKey || !embedUrl) {
       return {

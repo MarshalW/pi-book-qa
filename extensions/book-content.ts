@@ -7,7 +7,11 @@ import { join } from "node:path";
 // ---------- 数据访问（MinIO via mc，本地缓存）----------
 
 const CACHE_ROOT = "/tmp/pi-book-content";
-const MC_BASE = "monkey/ebook/parsed";
+
+/** mc alias / bucket 可经环境变量覆盖（见 README） */
+const MC_ALIAS = process.env.MC_ALIAS ?? "monkey";
+const MC_BUCKET = process.env.MC_BUCKET ?? "ebook";
+const MC_BASE = `${MC_ALIAS}/${MC_BUCKET}/parsed`;
 
 const FURNITURE = new Set(["page_number", "footer", "header", "page_footnote", "aside_text"]);
 
