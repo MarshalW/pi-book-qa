@@ -28,8 +28,15 @@ pi extension for AI-assisted ebook reading. Provides tools for discovering, sear
 Install project-locally (recommended, supports per-project version pinning):
 
 ```bash
+# From the npm registry (e.g. internal Verdaccio)
 pi install -l npm:@marshal/pi-book-qa@0.1.0
+
+# From the GitHub repo, pinned to a git tag (no registry needed)
+pi install -l git:git@github.com:MarshalW/pi-book-qa@v0.1.0
 ```
+
+Both install the same package; the git source pins to the tag (like a version), and
+tagged releases are the single source of truth going forward.
 
 ## Configuration
 
