@@ -1,4 +1,4 @@
-# pi-ebook-tools
+ # @marshal/pi-ebook-tools
 
 pi extension for AI-assisted ebook reading. Provides tools for discovering, searching, and reading ebooks stored in MinIO, Elasticsearch, and Qdrant.
 
@@ -26,13 +26,10 @@ pi extension for AI-assisted ebook reading. Provides tools for discovering, sear
 ## Installation
 
 ```bash
-pi install npm:pi-ebook-tools
-```
-
-Or install from a local path for development:
+Install project-locally (recommended, supports per-project version pinning):
 
 ```bash
-pi install /path/to/pi-ebook-tools
+pi install -l npm:@marshal/pi-ebook-tools@0.1.0
 ```
 
 ## Configuration
@@ -52,9 +49,10 @@ QDRANT_MONKEY_EMBED_MODEL=bge-m3:latest
 ```
 
 The extension searches for `.env` in the following order:
-1. Current working directory (`process.cwd()`)
-2. The extension's package root
-3. The `extensions/` directory inside the package
+1. Each directory walking up from the current working directory, until the git root
+2. The package root (for a `.env` shipped next to the package)
+
+Works even when pi is launched from a project subdirectory.
 
 ## Usage
 
