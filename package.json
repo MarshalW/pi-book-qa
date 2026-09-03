@@ -1,0 +1,25 @@
+{
+  "name": "@marshal/pi-ebook-tools",
+  "version": "0.1.0",
+  "description": "pi extension for AI-assisted ebook reading: book discovery, ES/Qdrant search, and content loading",
+  "keywords": ["pi-package"],
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "extensions",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/es-list-books.ts",
+      "./extensions/es-search.ts",
+      "./extensions/qdrant-search.ts",
+      "./extensions/book-content.ts"
+    ]
+  }
+}
