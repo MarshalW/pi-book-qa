@@ -1,6 +1,6 @@
 {
   "name": "@marshal/pi-ebook-tools",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "pi extension for AI-assisted ebook reading: book discovery, ES/Qdrant search, and content loading",
   "keywords": [
     "pi-package"
