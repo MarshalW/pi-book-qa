@@ -9,7 +9,7 @@ import { join } from "node:path";
 const CACHE_ROOT = "/tmp/pi-book-content";
 
 /** mc alias / bucket 可经环境变量覆盖（见 README） */
-const MC_ALIAS = process.env.MC_ALIAS ?? "monkey";
+const MC_ALIAS = process.env.MC_ALIAS ?? "minio";
 const MC_BUCKET = process.env.MC_BUCKET ?? "ebook";
 const MC_BASE = `${MC_ALIAS}/${MC_BUCKET}/parsed`;
 

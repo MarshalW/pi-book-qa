@@ -53,7 +53,7 @@ MinIO access (used by `book_structure` / `book_locate` / `book_content` via the 
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `MC_ALIAS` | `monkey` | Your `mc` CLI alias for the MinIO server |
+| `MC_ALIAS` | `minio` | Your `mc` CLI alias for the MinIO server |
 | `MC_BUCKET` | `ebook` | Bucket containing parsed book data |
 
 The extension searches for `.env` in the following order:
