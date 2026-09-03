@@ -1,8 +1,10 @@
 {
   "name": "@marshal/pi-ebook-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pi extension for AI-assisted ebook reading: book discovery, ES/Qdrant search, and content loading",
-  "keywords": ["pi-package"],
+  "keywords": [
+    "pi-package"
+  ],
   "type": "module",
   "license": "MIT",
   "files": [
