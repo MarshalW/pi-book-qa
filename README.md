@@ -1,4 +1,4 @@
-# @marshal/pi-ebook-tools
+# @marshal/pi-book-qa
 
 pi extension for AI-assisted ebook reading. Provides tools for discovering, searching, and reading ebooks stored in MinIO, Elasticsearch, and Qdrant.
 
@@ -28,7 +28,7 @@ pi extension for AI-assisted ebook reading. Provides tools for discovering, sear
 Install project-locally (recommended, supports per-project version pinning):
 
 ```bash
-pi install -l npm:@marshal/pi-ebook-tools@0.1.0
+pi install -l npm:@marshal/pi-book-qa@0.1.0
 ```
 
 ## Configuration
@@ -107,7 +107,7 @@ Once installed, the tools are available in pi conversations:
 ## Development
 
 ```bash
-git clone <this-repo>
+git clone git@github.com:marshalw/pi-book-qa.git
 cd pi-ebook-tools
 pi install ./        # local install for testing
 ```
